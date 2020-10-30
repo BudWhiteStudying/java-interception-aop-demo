@@ -1,0 +1,10 @@
+<aspectj>
+    <weaver options="-verbose -showWeaveInfo">
+        <include within="com.budwhite.studying.sample.library.SomeClass"/>
+        <include within="**.BeforeAndAfterLoggingAspect"/>
+    </weaver>
+    <aspects>
+        <!-- Aspects -->
+        <aspect name="**.BeforeAndAfterLoggingAspect"/>
+    </aspects>
+</aspectj>
